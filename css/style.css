@@ -14,6 +14,11 @@ body {
     color: #ffffff;
 }
 
+footer{
+    background-color: #ff9800;!important
+    padding: 1em;!important
+}
+
 .container{
     background:rgba (255, 255, 255, 0.5);
     padding: 20px;
@@ -90,4 +95,10 @@ button:hover {
     .container {
         width:90%;
     }
+}
+
+footer{
+    margin-bottom: 55px;
+    padding: 0;
+    text-align: center;
 }
