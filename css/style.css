@@ -16,6 +16,10 @@ body {
     color: #ffffff;
 }
 
+footer{
+    background-color:#ff9800;
+    padding:1em;
+}
 
 main {
     background:rgba (255, 255, 255, 0.5);
