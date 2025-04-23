@@ -20,7 +20,7 @@ async function getExchangeRate(daMoeda, paraMoeda) {
     }
 }
 
-document.getElementById("currency-form").addEventListener("submit", async function(event) {
+document.getElementById("currency-form").addEventListener("submit", async function(event){
     event.preventDefault();
     
     
@@ -37,4 +37,4 @@ document.getElementById("currency-form").addEventListener("submit", async functi
         }else{
             alert("Erro ao buscar cotacão de câmbio, favor, tente novamente");
         }
-    });
+});
