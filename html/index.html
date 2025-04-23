@@ -8,35 +8,38 @@
     <title>Conversor de Moédas</title>
 </head>
 <body>
-    <div class="container">
+    <main>
         <h2>CONVERSOR DE MOÉDAS</h2>
-        <div class="converter">
+        <form id="currency-group">
             <div class="input-group">
-                <label for="amount">Valor</label>
+                <label for="">Valor</label>
                 <input type="number" id="amount" placeholder="Digite um valor" min="0">
             </div>
-            <div class="currency-group">
-                <div>
-                    <label for="fromCurrency">De:</label>
-                    <select id="fromCurrency"></select>
-                </div>
-                <button id="swap" title="Inverter moedas"></button>
-                <div>
-                    <label for="toCurrency">Para:</label>
-                    <select id="toCurrency"></select>
-                </div>
+            <div class="input-group">
+                <label form="daMoeda">De</label>
+                <select id="daMoeda">
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="EUR">EURO (EUR)</option>
+                    <option value="BRL">REAL (BRL)</option>
+                </select>
             </div>
-            <button id="converterBtn">Converter</button>
-            <div class="result">
-                <p id="exchangeRate"></p>
-                <input type="text" id="result" readonly>
+            <div class="input-group">
+                <label form="paraMoeda">Para</label>
+                <select id="paraMoeda">
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="EUR">EURO (RUR)</option>
+                    <option value="BRL">REAL (BRL)</option>
+                </select>
             </div>
-        </div>
-    </div>
+            <button type="submit">Converter</button>
+            <button type="reset">Limpar</button>
+        </form>
 
+        <div id="conversão"></div>
+    </main>
   
     <footer>
-        <p> &copy; Todos os direitos reservados DSTECH:</p>
+       
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
